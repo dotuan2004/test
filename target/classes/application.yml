@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: demo
+
+  datasource:
+    url: jdbc:mysql://ballast.proxy.rlwy.net:31112/railway
+    username: root
+    password: XEafGftHiqCxopvYMJkJMARABYrdhZoy
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: dodinhtuanyb2k4@gmail.com
+    password: fvocofqpeseipsia
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+        mail:
+          debug: true
+
+server:
+  port: 8000
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.security.authentication: DEBUG
+    org.springframework.security.web.authentication: DEBUG
+    org.springframework.security.access: DEBUG
